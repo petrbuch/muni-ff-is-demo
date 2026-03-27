@@ -52,13 +52,18 @@ muni-ff-is-demo/
 ├── templates/                           # Šablony dokumentů
 │   └── analyza-template.md             # Šablona pro analýzu požadavků
 ├── analyza/                            # Analytické dokumenty (obsah v češtině)
-│   └── .gitkeep
-├── prototypy/                          # Interaktivní prototypy (Next.js)
-│   └── .gitkeep
+│   ├── iskb12-knihovna-budoucnost.md   # Ukázková analýza (případové studie knihovny)
+│   └── features/                       # Gherkin / Cucumber specifikace
+├── prototypy/
+│   └── rezervacni-system/              # Next.js prototyp rezervačního systému (viz `README.md` uvnitř)
 ├── inputs/                             # Vstupní materiály (případové studie, zadání)
+│   ├── iskb12-case-study.md            # Text případové studie (PDF lze převést přes `pdftotext`)
 │   └── Iskb12 Case Study požadavky.pdf
+├── .gitignore
 └── README.md                           # Tento soubor
 ```
+
+Interaktivní prototyp se spouští z `prototypy/rezervacni-system/` (`npm install` + `npm run dev`). Nasazení na Vercel: nastav **Root Directory** na `prototypy/rezervacni-system`.
 
 ---
 
